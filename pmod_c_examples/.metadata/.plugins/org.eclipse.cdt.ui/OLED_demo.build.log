@@ -1,0 +1,23 @@
+22:06:40 **** Auto Build of configuration Debug for project OLED_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OLED_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: OLED_demo.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../OLED_demo_bsp/ps7_cortexa9_0/lib -o "OLED_demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: OLED_demo.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size OLED_demo.elf  |tee "OLED_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  34000	   1176	  23512	  58688	   e540	OLED_demo.elf
+Finished building: OLED_demo.elf.size
+ 
+
+22:06:40 Build Finished (took 375ms)
+

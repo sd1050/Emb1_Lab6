@@ -1,0 +1,23 @@
+22:15:25 **** Auto Build of configuration Debug for project TMP3_demo ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TMP3_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: TMP3_demo.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TMP3_demo_bsp/ps7_cortexa9_0/lib -o "TMP3_demo.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: TMP3_demo.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size TMP3_demo.elf  |tee "TMP3_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27596	   1168	  22680	  51444	   c8f4	TMP3_demo.elf
+Finished building: TMP3_demo.elf.size
+ 
+
+22:15:26 Build Finished (took 372ms)
+
