@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;RTCC_OLED/Debug&apos;" deleteContents="false" description="Delete resource &apos;RTCC_OLED/Debug&apos;" element1="/RTCC_OLED/Debug" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1589305615902"/>
+</session>

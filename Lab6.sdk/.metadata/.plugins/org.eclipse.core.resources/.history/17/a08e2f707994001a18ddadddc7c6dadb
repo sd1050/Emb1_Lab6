@@ -1,0 +1,26 @@
+/*
+ * main.c
+ *
+ *  Created on: May 12, 2020
+ *      Author: sd1050
+ */
+#include <stdio.h>
+#include "sleep.h"
+#include "xil_cache.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "PmodRTCC.h"
+#include "PmodOLED.h"
+
+/* ------------------------------------------------------------ */
+/*                  Global Variables                            */
+/* ------------------------------------------------------------ */
+#ifndef PMODRTCC_H
+#define PMODRTCC_H
+
+
+int main() {
+
+   return 0;
+}
+

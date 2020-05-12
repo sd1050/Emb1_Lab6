@@ -1,0 +1,52 @@
+/*
+ * main.c
+ *
+ *  Created on: May 12, 2020
+ *      Author: sd1050
+ */
+#include <stdio.h>
+#include "sleep.h"
+#include "xil_cache.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "PmodRTCC.h"
+#include "PmodOLED.h"
+
+/*************************** Type Declarations *****************************/
+
+// Struct containing each field of the RTCC's time registers represented in
+// 8-bit binary coded decimal - 0x30 in the minute field represents 30 minutes.
+typedef struct RTCC_Time {
+   u8 second;
+   u8 minute;
+   u8 hour;
+   u8 ampm;
+   u8 day;
+   u8 date;
+   u8 month;
+   u8 year;
+} RTCC_Time;
+
+/* ------------------------------------------------------------ */
+/*                  Global Variables                            */
+/* ------------------------------------------------------------ */
+
+/************************** Global Declarations ****************************/
+
+// Which weekday starts this array is arbitrary, as long as it stays the same
+// when you set and read the day
+const char *weekdays[7] = {
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday",
+   "Sunday"
+};
+
+int main() {
+
+   return 0;
+}
+
